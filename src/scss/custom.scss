@@ -41,8 +41,9 @@ main .btn-danger:hover{
     transform: scale(1.1);
 }
 main .btn-danger:focus{ 
-    box-shadow: 0 0 5px  #e6050599 !important ;
-    border-color: #e60505 !important;
+    background-color: #850202;
+    box-shadow: 2px 2px 8px  #e6050599 !important ;
+    border:1.5px solid #e60505 !important;
 }
 .link-danger{
     color: #e70606 !important; 
