@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    min-width: 372px;
+}
+
+.wrapper{
+    min-height: 100vh !important; 
+}
+
+// ----navbar----
+.navbar{
+    background-image: linear-gradient(40deg, #850202, #000) !important;
+    font-family: 'Lato', sans-serif; 
+}
+
+.nav{
+    display: inline-block;
+}
+
+.nav-item > .btn-outline-danger:hover{ background-color: #850202;}
+.nav-item > .btn-outline-danger, .btn-danger{ border-color: #850202;}
+.nav-item > .btn-danger, .btn-danger{ background-color:  #850202;}
+.nav-item > .btn-danger:hover, .btn-danger:hover{ background-color:  #b10505;}
+
+// ----slide----
+
+.carousel-indicators {
+   bottom: -15px;
+}
+
+// ----main----
+
+.link-danger{
+    color: #850202 !important; 
+    text-decoration: underline #850202 !important;
+}
+
+.link-danger:hover{
+    color: #e70606 !important; 
+    text-decoration: underline #e70606!important;
+    
+}
+
+
+footer{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+ }
+
+
+// ---------- Media Query ----------
+ 
+
+@media(max-width: 576px){
+    .carousel-indicators {
+        width: 20px;
+        height: 2px;
+    }
+}
+
+@media(max-width: 992px){
+    .carousel-indicators {
+        width: 25px;
+        height: 2.5px;
+        bottom: -15px;
+
+    }
+
+    .nav-item > .btn-outline-danger:hover{ background-color: #b10505;}
+    .nav-item > .btn-outline-danger{ border-color: #b10505;}
+}
+
