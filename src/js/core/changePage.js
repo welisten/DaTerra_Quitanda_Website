@@ -7,7 +7,7 @@ export function changehref(){
             event.preventDefault()
 
             $('main').attr('dt-include', $(e).attr('href'))
-            $('[dt-slide]').hide()
+            $(e).attr('href') !== './pages/main.html' ? $('[dt-slide]').hide() : $('[dt-slide]').show() 
             loadInclude()
         })
     })

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+//                                                  ----BODY----
 body{
     min-width: 372px;
 }
@@ -8,7 +8,7 @@ body{
     min-height: 100vh !important; 
 }
 
-// ----navbar----
+//                                                  ----NAVBAR----
 .navbar{
     background-image: linear-gradient(40deg, #850202, #000) !important;
     font-family: 'Lato', sans-serif; 
@@ -19,29 +19,54 @@ body{
 }
 
 .nav-item > .btn-outline-danger:hover{ background-color: #850202;}
-.nav-item > .btn-outline-danger, .btn-danger{ border-color: #850202;}
-.nav-item > .btn-danger, .btn-danger{ background-color:  #850202;}
-.nav-item > .btn-danger:hover, .btn-danger:hover{ background-color:  #b10505;}
+.nav-item > .btn-outline-danger{ border-color: #850202;}
+.nav-item > .btn-danger{ background-color:  #850202;}
+.nav-item > .btn-danger:hover{ background-color:  #b10505;}
 
-// ----slide----
+//                                                  ----SLIDE----
 
 .carousel-indicators {
    bottom: -15px;
 }
 
-// ----main----
-
+//                                                  ----MAIN----
+main .btn-danger{
+    border: none;
+    background-color:  #850202;
+    transition: all 0.3s;
+}
+main .btn-danger:hover{ 
+    background-color:  #b10505;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.45);
+    transform: scale(1.1);
+}
+main .btn-danger:focus{ 
+    box-shadow: 0 0 5px  #e6050599 !important ;
+    border-color: #e60505 !important;
+}
 .link-danger{
+    color: #e70606 !important; 
+    text-decoration: underline #e70606!important;
+}
+
+.link-danger:hover{
     color: #850202 !important; 
     text-decoration: underline #850202 !important;
 }
 
-.link-danger:hover{
-    color: #e70606 !important; 
-    text-decoration: underline #e70606!important;
-    
+input:focus{
+    box-shadow: 0 0 5px  #e6050599 !important ;
+    border-color: #e60505 !important;
+}
+input[type=checkbox]:focus{
+    box-shadow: 0 0 5px  #e6050566 ;
+    border-color: #e60505;
 }
 
+input[type=checkbox]:checked{
+    background-color: #e70606;
+    border-color: #850202;
+}
 
 footer{
     font-family: 'Lato', sans-serif;
@@ -49,7 +74,7 @@ footer{
  }
 
 
-// ---------- Media Query ----------
+//                                          ---------- MEDIA QUERY ----------
  
 
 @media(max-width: 576px){
