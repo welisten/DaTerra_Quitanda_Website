@@ -3,7 +3,6 @@
 body{
     min-width: 372px;
 }
-
 .wrapper{
     min-height: 100vh !important; 
 }
@@ -45,23 +44,45 @@ main .btn-danger:focus{
     box-shadow: 4px 4px 8px  #e60505a1 !important ;
     border:1.5px solid #e60505 !important;
 }
+main .btn-danger:disabled{
+    background-color: #e6050536;
+    color: #000;
+}
+
+main #button-addon2, .card-footer form .btn-danger{
+    transform: none;
+}
 
 main textarea:focus{ 
     background-color: #850202;
     box-shadow: 2px 2px 8px  #e6050599 !important ;
     border:1.5px solid #e60505 !important;
 }
+
+a.page-link{
+    text-decoration: none !important;
+    color: #850202;
+}
+a.page-link:hover{
+    color: #e60505 !important;
+    text-decoration: none !important;
+}
+a.page-link:focus{
+    background-color: #fff;
+    color: #e70606;
+    box-shadow: 0 0 5px  #e6050599 !important ;
+    border-color: #e60505 !important;
+}
 .link-danger{
     color: #e70606 !important; 
     text-decoration: underline #e70606!important;
 }
-
 .link-danger:hover{
     color: #850202 !important; 
     text-decoration: underline #850202 !important;
 }
 
-input:focus{
+input:focus, .form-select:focus{
     box-shadow: 0 0 5px  #e6050599 !important ;
     border-color: #e60505 !important;
 }
@@ -69,12 +90,11 @@ input[type=checkbox]:focus{
     box-shadow: 0 0 5px  #e6050566 ;
     border-color: #e60505;
 }
-
 input[type=checkbox]:checked{
     background-color: #e70606;
     border-color: #850202;
 }
-
+//                                                  ----FOOTER----
 footer{
     font-family: 'Lato', sans-serif;
     font-size: 0.8rem;
