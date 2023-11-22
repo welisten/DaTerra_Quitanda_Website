@@ -94,6 +94,13 @@ input[type=checkbox]:checked{
     background-color: #e70606;
     border-color: #850202;
 }
+.truncate-3l{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 //                                                  ----FOOTER----
 footer{
     font-family: 'Lato', sans-serif;
