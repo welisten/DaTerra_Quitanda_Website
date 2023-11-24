@@ -17,8 +17,8 @@ body{
     display: inline-block;
 }
 
-.nav-item > .btn-outline-danger:hover{ background-color: #850202;}
 .nav-item > .btn-outline-danger{ border-color: #850202;}
+.nav-item > .btn-outline-danger:hover{ background-color: #850202;}
 .nav-item > .btn-danger{ background-color:  #850202;}
 .nav-item > .btn-danger:hover{ background-color:  #b10505;}
 
@@ -59,6 +59,39 @@ main textarea:focus{
     border:1.5px solid #e60505 !important;
 }
 
+.text-danger{
+    color: #b10505 !important;
+}
+
+.input-group .btn-outline-danger{
+    border-color: #850202;
+    color: #850202;
+}
+.btn-outline-danger{ 
+    border-color: #850202;
+    color: #000;
+}
+.btn-outline-danger:hover{ 
+    background-color: #850202;
+    color: #fff imporant !important;
+    border: #b10505;
+}
+
+.input-group input.border-danger{
+    border-color: #850202 !important;
+}
+.input-group .btn-outline-danger:hover{ 
+    background-color: #850202;
+    color: #fff;
+    box-shadow: 0 0 5px #000;
+
+}
+.input-group .btn-outline-danger .bi-trash3:hover{ 
+    background-color: #850202;
+    color: #fff;
+}
+
+
 a.page-link{
     text-decoration: none !important;
     color: #850202;
@@ -77,6 +110,13 @@ a.page-link:focus{
     color: #e70606 !important; 
     text-decoration: underline #e70606!important;
 }
+.link-danger-disunderlined{
+    color: #e70606 !important; 
+    text-decoration: none !important;
+}
+b .link-danger-disunderlined{
+    color: #850202 !important;
+}
 .link-danger:hover{
     color: #850202 !important; 
     text-decoration: underline #850202 !important;
@@ -94,6 +134,11 @@ input[type=checkbox]:checked{
     background-color: #e70606;
     border-color: #850202;
 }
+
+
+.input-group 
+.input-group 
+
 .truncate-3l{
     display: -webkit-box;
     -webkit-line-clamp: 3;
