@@ -8,19 +8,7 @@ body{
 }
 
 //                                                  ----NAVBAR----
-.navbar{
-    background-image: linear-gradient(40deg, #850202, #000) !important;
-    font-family: 'Lato', sans-serif; 
-}
 
-.nav{
-    display: inline-block;
-}
-
-.nav-item > .btn-outline-danger{ border-color: #850202;}
-.nav-item > .btn-outline-danger:hover{ background-color: #850202;}
-.nav-item > .btn-danger{ background-color:  #850202;}
-.nav-item > .btn-danger:hover{ background-color:  #b10505;}
 
 //                                                  ----SLIDE----
 
@@ -67,7 +55,9 @@ main .btn-outline-success:hover{
     color: #fff !important;
     border: #19b105;
 }
-
+main .bg-danger{
+    background-color: #850202 !important;
+}
 label:hover .text-dark{
     color: #e2e2e2 !important;
     transition: color 0.2s ease;
