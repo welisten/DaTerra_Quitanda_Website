@@ -7,4 +7,4 @@ import 'jquery'
 
 //methods and plugins
 import './js/core/include.js'
-import './js/core/changePage.js'
+import './js/plugins/changeHrefPlugin.js'

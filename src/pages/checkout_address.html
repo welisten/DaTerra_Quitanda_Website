@@ -1,51 +1,167 @@
-<div class="container">
-    <h1>Selecione o endereço de entrega</h1>
-    <h3 class="lead mb-4">
-        Selecione o endereço de entrega e clique em <b>Continuar</b> para prosseguir para a <b>seleção de forma de pagamento</b>.
-    </h3>
-    <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
-        <div class="mb-4 mx-2 flex-even">
-            <input type="radio" class="btn-check" id="checkAddress1" name="address" autocomplete="off" >
-            <label for="checkAddress1" class="btn btn-outline-danger p-4 h-100 w-100">
-                <h3 class="text-dark">
-                    <b>Minha Casa</b>
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DaTerra Quitanda : Confirmação Endereço</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../imgs/favicon/site.webmanifest">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- boostrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="d-flex flex-column wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger bg-gradient border-bottom shadow mb-3 py-0">
+                <div class="container my-1">
+                    <a class="navbar-brand py-0 m-0" href="../index.html">
+                        <img src="../imgs/brand/brand.png" alt="Logotipo" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a href="../index.html" class="nav-link text-white">Principal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./contact.html" class="nav-link text-white">Contato</a>
+                            </li>
+                        </ul>
+                        <div class="align-self-end">
+                            <ul class="navbar-nav">
+                                <div
+                                    class="container-fluid d-flex flex-column align-items-lg-center flex-lg-row m-0 p-0">
+                                    <div class="d-flex justify-content-center order-2 order-lg-1 m-0 p-0">
+                                        <li class="nav-item ">
+                                            <a href="./custumer_dashboard.html">
+                                                <i class="bi bi-person fs-3 text-white "></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-item btn btn-outline-danger text-white mx-2 me-lg-3 mb-3 mb-lg-0 px-2"
+                                                href="./register.html">Quero me cadastrar
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link btn btn-danger text-white mx-2 me-lg-2  mb-3 mb-lg-0 px-2"
+                                                href="./login.html">Entrar
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <li class="nav-item position-relative order-1 order-lg-2">
+                                        <span
+                                            class="badge rounded-pill bg-light text-danger position-absolute top-0 start-0"
+                                            title="5 produto(s) no carrinho">
+                                            <small>5</small>
+                                        </span>
+                                        <a href="./cart.html" class="nav-link text-white">
+                                            <i class="bi bi-cart3 fs-4"></i>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-fill">
+            <div class="container">
+                <h1>Selecione o endereço de entrega</h1>
+                <h3 class="lead mb-4">
+                    Selecione o endereço de entrega e clique em <b>Continuar</b> para prosseguir para a <b>seleção de
+                        forma de pagamento</b>.
                 </h3>
-                <hr>
-                <b>Wesley Welisten</b><br>
-                Rua Vereador Armando Barboza, 176 <br>
-                Guapimirim/RJ <br>
-                <RJ>CEP 99.999-999</RJ>
-            </label>
-        </div>
-        <div class="mb-4 mx-2 flex-even">
-            <input type="radio" class="btn-check" id="checkAddress2" name="address" autocomplete="off" >
-            <label for="checkAddress2" class="btn btn-outline-danger p-4 h-100 w-100">
-                <h3 class="text-dark">
-                    <b>Trabalho</b>
-                </h3>
-                <hr>
-                <b>Wesley Welisten</b><br>
-                Rua dos Alfeneiros, 4 <br>
-                Guapimirim/RJ <br>
-                <RJ>CEP 99.999-999</RJ>
-            </label>
-        </div>
-        <div class="mb-4 mx-2 flex-even">
-            <input type="radio" class="btn-check" id="checkAddress3" name="address" autocomplete="off" >
-            <label for="checkAddress3" class="btn btn-outline-danger p-4 h-100 w-100">
-                <h3 class="text-dark">
-                    <b>Curso</b>
-                </h3>
-                <hr>
-                <b>Wesley Welisten</b><br>
-                Rua Alcindo Guanabara, 1556 <br>
-                Teresópolis/RJ <br>
-                <RJ>CEP 98.989-989</RJ>
-            </label>
-        </div>
+                <div class="d-flex justify-content-around flex-wrap border rounded-top pt-4 px-3">
+                    <div class="mb-4 mx-2 flex-even">
+                        <input type="radio" class="btn-check" id="checkAddress1" name="address" autocomplete="off">
+                        <label for="checkAddress1" class="btn btn-outline-danger p-4 h-100 w-100">
+                            <h3 class="text-dark">
+                                <b>Minha Casa</b>
+                            </h3>
+                            <hr>
+                            <b>Wesley Welisten</b><br>
+                            Rua Vereador Armando Barboza, 176 <br>
+                            Guapimirim/RJ <br>
+                            <RJ>CEP 99.999-999</RJ>
+                        </label>
+                    </div>
+                    <div class="mb-4 mx-2 flex-even">
+                        <input type="radio" class="btn-check" id="checkAddress2" name="address" autocomplete="off">
+                        <label for="checkAddress2" class="btn btn-outline-danger p-4 h-100 w-100">
+                            <h3 class="text-dark">
+                                <b>Trabalho</b>
+                            </h3>
+                            <hr>
+                            <b>Wesley Welisten</b><br>
+                            Rua dos Alfeneiros, 4 <br>
+                            Guapimirim/RJ <br>
+                            <RJ>CEP 99.999-999</RJ>
+                        </label>
+                    </div>
+                    <div class="mb-4 mx-2 flex-even">
+                        <input type="radio" class="btn-check" id="checkAddress3" name="address" autocomplete="off">
+                        <label for="checkAddress3" class="btn btn-outline-danger p-4 h-100 w-100">
+                            <h3 class="text-dark">
+                                <b>Curso</b>
+                            </h3>
+                            <hr>
+                            <b>Wesley Welisten</b><br>
+                            Rua Alcindo Guanabara, 1556 <br>
+                            Teresópolis/RJ <br>
+                            <RJ>CEP 98.989-989</RJ>
+                        </label>
+                    </div>
+                </div>
+                <div class="text-end border border-top-0 rounded-bottom p-4 pb-0 mb-4">
+                    <a href="./checkout_summary.html" class="btn btn-outline-success btn-lg mb-3">Voltar aos itens</a>
+                    <a href="./checkout_payment.html" class="btn btn-danger btn-lg ms-2 mt-xs-3 mb-3">Continuar</a>
+                </div>
+            </div>
+        </main>
+        <footer class="border-top shadow text-muted bg-light flex-row">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md text-center text-md-start">
+                        &copy; 2020 - Quitanda Online <br>
+                        Rua Francisco Barboza, 176, Rio de Janeiro/RJ<br>
+                        CNPJ 99.999.999/0001-99<br>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-center">
+                        <a href="./privacy.html" class="text-decoration-none text-dark">Politicas de Privacidade
+                        </a><br>
+                        <a href="./terms_of_use.html" class="text-decoration-none text-dark">Termos de Uso
+                        </a><br>
+                        <a href="./about_us.html" class="text-decoration-none text-dark">Quem Somos
+                        </a><br>
+                        <a href="./exchanges.html" class="text-decoration-none text-dark">Trocas e Devoluções
+                        </a>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-end">
+                        <a href="./contact.html" class="text-decoration-none text-dark">Contatos
+                        </a><br>
+                        E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+                            email@dominio.com</a><br>
+                        Telefone: <a href="phone:21999996666" class="text-decoration-none text-dark">(21)99999-6666
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="text-end border border-top-0 rounded-bottom p-4 pb-0 mb-4">
-        <a href="./pages/checkout_summary.html" class="btn btn-outline-success btn-lg mb-3" dt-href>Voltar aos itens</a>
-        <a href="./pages/checkout_payment.html" class="btn btn-danger btn-lg ms-2 mt-xs-3 mb-3" onclick="window.scrollTo(0, 0)" dt-href>Continuar</a>
-    </div>
-</div>
+    <script src="../app.js"></script>
+</body>
+
+</html>

@@ -15,9 +15,7 @@ export function loadInclude(parent){
             url,
             success(data){
                 $(e).html(data)
-                $(e).removeAttr('dt-include')
                 loadHtmlSuccessCallback.forEach(callback => callback(data))
-                loadInclude(e)
             }    
         })
     })
