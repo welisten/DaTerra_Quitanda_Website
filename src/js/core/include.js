@@ -14,6 +14,7 @@ export function loadInclude(parent){
         $.ajax({
             url,
             success(data){
+                // console.log()
                 $(e).html(data)
                 loadHtmlSuccessCallback.forEach(callback => callback(data))
             }    

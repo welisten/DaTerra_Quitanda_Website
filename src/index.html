@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DaTerra Quitanda : Pagina Principal </title>
@@ -12,511 +13,557 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../style.css">
     <!-- boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <!-- boostrap-icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+</head>
+
+<body>
     <div class="d-flex flex-column wrapper">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger bg-gradient border-bottom shadow mb-3 py-0">
-          <div class="container my-1">
-              <a  class="navbar-brand py-0 m-0" href="index.html">
-                  <img src="./imgs/brand/brand.png" alt="Logotipo" height="50">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse">
-                  <ul class="navbar-nav flex-grow-1">
-                      <li class="nav-item">
-                          <a href="index.html" class="nav-link text-white">Principal</a>
-                      </li>
-                      <li class="nav-item">
-                          <a  href="./pages/contact.html"  class="nav-link text-white" dt-href>Contato</a>
-                      </li>
-                  </ul>
-                  <div class="align-self-end">
-                      <ul class="navbar-nav">
-                          <div class="container-fluid d-flex flex-column align-items-lg-center flex-lg-row m-0 p-0">
-                              <div class="d-flex justify-content-center order-2 order-lg-1 m-0 p-0">
-                                <li class="nav-item ">
-                                    <a href="./pages/custumer_dashboard.html">
-                                        <i class="bi bi-person fs-3 text-white "></i>
-                                    </a>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-danger bg-gradient border-bottom shadow mb-3 py-0">
+                <div class="container my-1">
+                    <a class="navbar-brand py-0 m-0" href="index.html">
+                        <img src="./imgs/brand/brand.png" alt="Logotipo" height="50">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link text-white">Principal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./pages/contact.html" class="nav-link text-white" dt-href>Contato</a>
+                            </li>
+                        </ul>
+                        <div class="align-self-end">
+                            <ul class="navbar-nav">
+                                <div
+                                    class="container-fluid d-flex flex-column align-items-lg-center flex-lg-row m-0 p-0">
+                                    <div class="d-flex justify-content-center order-2 order-lg-1 m-0 p-0">
+                                        <li class="nav-item ">
+                                            <a href="./pages/custumer_dashboard.html">
+                                                <i class="bi bi-person fs-3 text-white "></i>
+                                            </a>
+                                        </li>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-item btn btn-outline-danger text-white mx-2 me-lg-3 mb-3 mb-lg-0 px-2"
+                                                href="./pages/register.html" dt-href>Quero me cadastrar
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a class="nav-link btn btn-danger text-white mx-2 me-lg-2  mb-3 mb-lg-0 px-2"
+                                                href="./pages/login.html" dt-href>Entrar
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <li class="nav-item position-relative order-1 order-lg-2">
+                                        <span
+                                            class="badge rounded-pill bg-light text-danger position-absolute top-0 start-0"
+                                            title="5 produto(s) no carrinho">
+                                            <small>5</small>
+                                        </span>
+                                        <a href="./pages/cart.html" class="nav-link text-white" dt-href>
+                                            <i class="bi bi-cart3 fs-4"></i>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div id="carouselMain" class="carousel carousel-light slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button qo-indicators data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"
+                            type="button"></button>
+                        <button qo-indicators data-bs-target="#carouselMain" data-bs-slide-to="1"
+                            type="button"></button>
+                        <button qo-indicators data-bs-target="#carouselMain" data-bs-slide-to="2"
+                            type="button"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center" data-bs-interval="4000">
+                            <img src="./imgs/slides/slide1.png" alt="Capa do site" class="img-fluid d-none d-md-block">
+                            <img src="./imgs/slides/slide1_small.png" alt="Capa do site"
+                                class="img-fluid d-block d-md-none">
+                        </div>
+                        <div class="carousel-item  text-center" data-bs-interval="4000">
+                            <img src="./imgs/slides/slide1.png" alt="Capa do site" class="img-fluid d-none d-md-block">
+                            <img src="./imgs/slides/slide1_small.png" alt="Capa do site"
+                                class="img-fluid d-block d-md-none">
+                        </div>
+                        <div class="carousel-item  text-center" data-bs-interval="4000">
+                            <img src="./imgs/slides/slide1.png" alt="Capa do site" class="img-fluid d-none d-md-block">
+                            <img src="./imgs/slides/slide1_small.png" alt="Capa do site"
+                                class="img-fluid d-block d-md-none">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMain"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">proximo</span>
+                    </button>
+                </div>
+                <hr class="my-3">
+            </div>
+        </header>
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <form action="#" class="justify-content-center justify-content-md-start mb-3">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Digite aqui oque procura..."
+                                    id="txtSearch">
+                                <button class="btn btn-danger" type="button" id="button-addon2">Buscar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form action="#" class=" ms-3 d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option value="1">Ordenar pelo nome</option>
+                                    <option value="2">Ordenar pelo maior preço</option>
+                                    <option value="3">Ordenar pelo menor preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-items">
+                                        <a href="#" class="page-link">1</a>
+                                    </li>
+                                    <li class="page-items">
+                                        <a href="#" class="page-link">2</a>
+                                    </li>
+                                    <li class="page-items">
+                                        <a href="#" class="page-link">3</a>
+                                    </li>
+                                    <li class="page-items">
+                                        <a href="#" class="page-link">4</a>
+                                    </li>
+                                    <li class="page-items">
+                                        <a href="#" class="page-link">5</a>
+                                    </li>
+                                    <li class="page-items">
+                                        <a href="#" class="page-link disabled">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-0 mb-3">
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart-fill text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000001_morango.png" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000002_aipo.jpg" alt="morango" class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart-fill text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000003_pessego.jpg" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000004_abacate.jpg" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000005_alho.jpg" alt="morango" class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger" disabled>
+                                            <small>
+                                                Reabastecendo o estoque
+                                            </small>
+                                        </button>
+                                    </form>
+                                    <small class="text-danger"><b>Produto esgotado</b></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000006_repolho_verde.jpg" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000007_cebola_roxa.webp" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000008_salsinha.webp" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000009_espinafre_organico.jpg" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart-fill text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000010_maca.jpg" alt="morango" class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000011_pimentao-verde.jpg" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
+                        <div class="card text-center bg-light">
+                            <a href="#" class="position-absolute end-0 p-2">
+                                <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
+                            </a>
+                            <a href="./pages/product.html">
+                                <img src="./imgs/products/000012_limao.jpg" alt="morango"
+                                    class="card-img-top img-fluid">
+                            </a>
+                            <div class="card-header">
+                                R$ 4,50
+                            </div>
+                            <div class="car-body">
+                                <h5 class="card-title">Morango</h5>
+                                <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para
+                                    a sua mesa.</p>
+                                <div class="card-footer">
+                                    <form action="#" class="d-block">
+                                        <button class="btn btn-danger">
+                                            Adicionar ao carrinho
+                                        </button>
+                                    </form>
+                                    <small>50,56 kg em estoque</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-0 mb-3">
+                <div class="col-12 mb-3">
+                    <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                        <form action="#" class=" ms-3 d-inline-block">
+                            <select class="form-select form-select-sm">
+                                <option value="1">Ordenar pelo nome</option>
+                                <option value="2">Ordenar pelo maior preço</option>
+                                <option value="3">Ordenar pelo menor preço</option>
+                            </select>
+                        </form>
+                        <nav class="d-inline">
+                            <ul class="pagination pagination-sm my-0">
+                                <li class="page-items">
+                                    <a href="#" class="page-link">1</a>
                                 </li>
-                                  </li>
-                                  <li class="nav-item ">
-                                      <a  class="nav-item btn btn-outline-danger text-white mx-2 me-lg-3 mb-3 mb-lg-0 px-2" 
-                                          href="./pages/register.html" dt-href>Quero me cadastrar
-                                      </a>
-                                  </li>
-                                  <li class="nav-item ">
-                                      <a  class="nav-link btn btn-danger text-white mx-2 me-lg-2  mb-3 mb-lg-0 px-2" 
-                                          href="./pages/login.html" dt-href>Entrar
-                                      </a>
-                                  </li>
-                              </div>
-                              <li class="nav-item position-relative order-1 order-lg-2">
-                                  <span   class="badge rounded-pill bg-light text-danger position-absolute top-0 start-0" 
-                                          title="5 produto(s) no carrinho">
-                                      <small>5</small>
-                                  </span>
-                                  <a href="./pages/cart.html" class="nav-link text-white" dt-href>
-                                      <i class="bi bi-cart3 fs-4"></i>
-                                  </a>
-                              </li>
-                          </div>
-                      </ul>
-                  </div>
-              </div>
-          </div>       
-        </nav> 
-        <div class="container">
-          <div id="carouselMain" class="carousel carousel-light slide"  data-bs-ride="carousel">
-                  <div class="carousel-indicators" >
-                      <button qo-indicators data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" type="button"></button>
-                      <button qo-indicators data-bs-target="#carouselMain" data-bs-slide-to="1"  type="button"></button>
-                      <button qo-indicators data-bs-target="#carouselMain" data-bs-slide-to="2"  type="button"></button>
-                  </div>
-                  <div class="carousel-inner">
-                      <div class="carousel-item active text-center" data-bs-interval="4000">
-                          <img    src="./imgs/slides/slide1.png" alt="Capa do site" 
-                                  class="img-fluid d-none d-md-block">
-                          <img    src="./imgs/slides/slide1_small.png" alt="Capa do site" 
-                                  class="img-fluid d-block d-md-none">
-                      </div>
-                      <div class="carousel-item  text-center" data-bs-interval="4000">
-                          <img    src="./imgs/slides/slide1.png" alt="Capa do site" 
-                                  class="img-fluid d-none d-md-block">
-                          <img    src="./imgs/slides/slide1_small.png" alt="Capa do site" 
-                                  class="img-fluid d-block d-md-none">
-                      </div>
-                      <div class="carousel-item  text-center" data-bs-interval="4000">
-                          <img    src="./imgs/slides/slide1.png" alt="Capa do site" 
-                                  class="img-fluid d-none d-md-block">
-                          <img    src="./imgs/slides/slide1_small.png" alt="Capa do site" 
-                                  class="img-fluid d-block d-md-none">
-                      </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                      <span class="visually-hidden">anterior</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                      <span class="visually-hidden">proximo</span>
-                  </button>
-          </div>
-          <hr class="my-3">
-        </div>
-      </header>
-      <main class="flex-fill">
-        <div class="container">
-          <div class="row">
-              <div class="col-12 col-md-5">
-                  <form action="#" class="justify-content-center justify-content-md-start mb-3">
-                      <div class="input-group input-group-sm">
-                          <input type="text" class="form-control" placeholder="Digite aqui oque procura..." id="txtSearch">
-                          <button class="btn btn-danger" type="button" id="button-addon2">Buscar</button>
-                      </div>
-                  </form>
-              </div>
-              <div class="col-12 col-md-7">
-                  <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
-                      <form action="#" class=" ms-3 d-inline-block">
-                          <select class="form-select form-select-sm">
-                              <option  value="1">Ordenar pelo nome</option>
-                              <option  value="2">Ordenar pelo maior preço</option>
-                              <option  value="3">Ordenar pelo menor preço</option>
-                          </select>
-                      </form>
-                      <nav class="d-inline">
-                          <ul class="pagination pagination-sm my-0">
-                              <li class="page-items">
-                                  <a href="#" class="page-link">1</a>
-                              </li>
-                              <li class="page-items">
-                                  <a href="#" class="page-link">2</a>
-                              </li>
-                              <li class="page-items">
-                                  <a href="#" class="page-link">3</a>
-                              </li>
-                              <li class="page-items">
-                                  <a href="#" class="page-link">4</a>
-                              </li>
-                              <li class="page-items">
-                                  <a href="#" class="page-link">5</a>
-                              </li>
-                              <li class="page-items">
-                                  <a href="#" class="page-link disabled" >6</a>
-                              </li>
-                          </ul>
-                      </nav>
-                  </div>
-              </div>
-          </div>
-          <hr class="mt-0 mb-3">
-          <div class="row g-3 mb-3" >
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart-fill text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000001_morango.png" alt="morango" class="card-img-top img-fluid">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000002_aipo.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart-fill text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000003_pessego.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000004_abacate.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000005_alho.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger" disabled>
-                                      <small>
-                                          Reabastecendo o estoque
-                                      </small>
-                                  </button>
-                              </form>
-                              <small class="text-danger"><b>Produto esgotado</b></small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000006_repolho_verde.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000007_cebola_roxa.webp" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000008_salsinha.webp" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000009_espinafre_organico.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart-fill text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000010_maca.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000011_pimentao-verde.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex align-items stretch">
-                  <div class="card text-center bg-light">
-                      <a href="#" class="position-absolute end-0 p-2">
-                          <i class="bi bi-suit-heart text-danger" style="width: 24px;"></i>
-                      </a>
-                      <img src="./imgs/products/000012_limao.jpg" alt="morango" class="card-img-top">
-                      <div class="card-header">
-                          R$ 4,50
-                      </div>
-                      <div class="car-body">
-                          <h5 class="card-title">Morango</h5>
-                          <p class="card-text truncate-3l">500 gm de Morangos frescos direto da Serra Gaúcha para a sua mesa.</p>
-                          <div class="card-footer">
-                              <form action="#" class="d-block">
-                                  <button class="btn btn-danger">
-                                      Adicionar ao carrinho
-                                  </button>
-                              </form>
-                              <small>50,56 kg em estoque</small>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <hr class="mt-0 mb-3">
-          <div class="col-12 mb-3">
-              <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
-                  <form action="#" class=" ms-3 d-inline-block">
-                      <select class="form-select form-select-sm">
-                          <option  value="1">Ordenar pelo nome</option>
-                          <option  value="2">Ordenar pelo maior preço</option>
-                          <option  value="3">Ordenar pelo menor preço</option>
-                      </select>
-                  </form>
-                  <nav class="d-inline">
-                      <ul class="pagination pagination-sm my-0">
-                          <li class="page-items">
-                              <a href="#" class="page-link">1</a>
-                          </li>
-                          <li class="page-items">
-                              <a href="#" class="page-link">2</a>
-                          </li>
-                          <li class="page-items">
-                              <a href="#" class="page-link">3</a>
-                          </li>
-                          <li class="page-items">
-                              <a href="#" class="page-link">4</a>
-                          </li>
-                          <li class="page-items">
-                              <a href="#" class="page-link">5</a>
-                          </li>
-                          <li class="page-items">
-                              <a href="#" class="page-link disabled" >6</a>
-                          </li>
-                      </ul>
-                  </nav>
-              </div>
-          </div>
-        </div>
-      </main> 
-      <footer class="border-top shadow text-muted bg-light flex-row">
-        <div class="container">
-          <div class="row py-3">
-            <div class="col-12 col-md text-center text-md-start">
-                &copy; 2020 - Quitanda Online <br>
-                Rua Francisco Barboza, 176, Rio de Janeiro/RJ<br>
-                CNPJ 99.999.999/0001-99<br>
+                                <li class="page-items">
+                                    <a href="#" class="page-link">2</a>
+                                </li>
+                                <li class="page-items">
+                                    <a href="#" class="page-link">3</a>
+                                </li>
+                                <li class="page-items">
+                                    <a href="#" class="page-link">4</a>
+                                </li>
+                                <li class="page-items">
+                                    <a href="#" class="page-link">5</a>
+                                </li>
+                                <li class="page-items">
+                                    <a href="#" class="page-link disabled">6</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md text-center text-md-center">
-                <a  href="./pages/privacy.html" 
-                    class="text-decoration-none text-dark" 
-                    dt-href>Politicas de Privacidade
-                </a><br>
-                <a  href="./pages/terms_of_use.html" 
-                    class="text-decoration-none text-dark" 
-                    dt-href>Termos de Uso
-                </a><br>
-                <a  href="./pages/about_us.html" 
-                    class="text-decoration-none text-dark" 
-                    dt-href>Quem Somos
-                </a><br>
-                <a  href="./pages/exchanges.html" 
-                    class="text-decoration-none text-dark" 
-                    dt-href>Trocas e Devoluções
-                </a>
+        </main>
+        <footer class="border-top shadow text-muted bg-light flex-row">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-12 col-md text-center text-md-start">
+                        &copy; 2020 - Quitanda Online <br>
+                        Rua Francisco Barboza, 176, Rio de Janeiro/RJ<br>
+                        CNPJ 99.999.999/0001-99<br>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-center">
+                        <a href="./pages/privacy.html" class="text-decoration-none text-dark" dt-href>Politicas de
+                            Privacidade
+                        </a><br>
+                        <a href="./pages/terms_of_use.html" class="text-decoration-none text-dark" dt-href>Termos de Uso
+                        </a><br>
+                        <a href="./pages/about_us.html" class="text-decoration-none text-dark" dt-href>Quem Somos
+                        </a><br>
+                        <a href="./pages/exchanges.html" class="text-decoration-none text-dark" dt-href>Trocas e
+                            Devoluções
+                        </a>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-end">
+                        <a href="./pages/contact.html" class="text-decoration-none text-dark" dt-href>Contatos
+                        </a><br>
+                        E-mail: <a href="mailto:email@dominio.com" class="text-decoration-none text-dark">
+                            email@dominio.com</a><br>
+                        Telefone: <a href="phone:21999996666" class="text-decoration-none text-dark">(21)99999-6666
+                        </a>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md text-center text-md-end">
-                <a  href="./pages/contact.html" 
-                    class="text-decoration-none text-dark" 
-                    dt-href>Contatos
-                </a><br>
-                E-mail: <a  href="mailto:email@dominio.com"
-                            class="text-decoration-none text-dark">
-                                email@dominio.com</a><br>
-                Telefone: <a href="phone:21999996666" 
-                             class="text-decoration-none text-dark">(21)99999-6666
-                          </a>
-    
-            </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

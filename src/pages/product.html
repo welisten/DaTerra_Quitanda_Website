@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DaTerra Quitanda : Painel do Cliente</title>
+    <title>DaTerra Quitanda : Produto </title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="../imgs/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon/favicon-32x32.png">
@@ -77,50 +77,45 @@
             </nav>
         </header>
         <main class="flex-fill">
-            <div class="container" dt-dashboard>
-                <h1>Minha Conta</h1>
-                <div class="row gx-3">
-                    <div class="col-4">
-                        <div class="list-group">
-                            <a href="./customer_dashboard/customer_data.html" class="list-group-item list-group-item-action" action
-                                dt-href>
-                                <i class="bi bi-person fs-4" style="height: 24px; width: 24px;"></i>
-                                Dados Pessoais
-                            </a>
-                            <a href="./customer_dashboard/customer_contacts.html"
-                                class="list-group-item list-group-item-action line-height" action dt-href>
-                                <i class="bi bi-person-lines-fill fs-4" style="height: 24px; width: 24px;"></i>
-                                Contatos
-                            </a>
-                            <a href="./customer_dashboard/customer_address.html" class="list-group-item list-group-item-action  " action
-                                dt-href>
-                                <i class="bi bi-globe-americas fs-4" style="height: 24px; width: 24px;"></i>
-                                Endereço
-                            </a>
-                            <a href="./customer_dashboard/customer_requires.html" class="list-group-item list-group-item-action  " action
-                                dt-href>
-                                <i class="bi bi-truck fs-4" style="height: 24px; width: 24px;"></i>
-                                Pedidos
-                            </a>
-                            <a href="./customer_dashboard/customer_favorits.html" class="list-group-item list-group-item-action  " action
-                                dt-href>
-                                <i class="bi bi-heart fs-4" style="height: 24px; width: 24px;"></i>
-                                Favoritos
-                            </a>
-                            <a href="./customer_dashboard/customer_resetPass.html" class="list-group-item list-group-item-action  " action
-                                dt-href>
-                                <i class="bi bi-key fs-4" style="height: 24px; width: 24px;"></i>
-                                Alterar Senha
-                            </a>
-                            <a href="./customer_dashboard/logOut.html" class="list-group-item list-group-item-action  " action
-                                dt-href>
-                                <i class="bi bi-door-open fs-4" style="height: 24px; width: 24px;"></i>
-                                Sair
-                            </a>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 p-5">
+                        <img src="../imgs/products/000025_alecrim.png" class="img-thumbnail" mainImg>
+                        <br class="clearfix">
+                        <div class="row mt-3 gx-3">
+                            <div class="col-3">
+                                <img src="../imgs/products/000025_alecrim.png" class="img-thumbnail"
+                                    onclick="trocarImagen(this)">
+                            </div>
+                            <div class="col-3">
+                                <img src="../imgs/products/000026_couve_mineira.png" class="img-thumbnail"
+                                    onclick="trocarImagen(this)">
+                            </div>
+                            <div class="col-3">
+                                <img src="../imgs/products/000027_batata_doce.jpg" class="img-thumbnail"
+                                    onclick="trocarImagen(this)">
+                            </div>
+                            <div class="col-3">
+                                <img src="../imgs/products/000028_jabuticaba.webp" class="img-thumbnail"
+                                    onclick="trocarImagen(this)">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-8" dt-include="./customer_dashboard/customer_data.html">
-
+                    <div class="col-12 col-sm-6 py-5">
+                        <h1>Alecrin</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio totam delectus deserunt,
+                            tempore possimus mollitia fugit iusto quaerat voluptatibus quisquam, libero dicta autem
+                            laborum.
+                        </p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, iste? Doloribus
+                            temporibus quis cum voluptates, laudantium provident esse culpa atque incidunt sequi omnis
+                            dolorum deserunt quam? Fugiat, possimus. Iure eum a ea. Laboriosam ex sequi odio, rerum
+                            deleniti magni veritatis?
+                        </p>
+                        <p>
+                            <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2"><i class="bi bi-cart"></i> Adicionar ao Carrinho</button>
+                            <button class="btn btn-lg btn-outline-danger"><i class="bi bi-heart"></i> Adicionar aos Favoritos</button>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -158,6 +153,10 @@
     </div>
     <script src="../app.js"></script>
     <script>
+        function trocarImagen(el){
+            const $mainImg = document.querySelector('[mainImg]')
+            $mainImg.src = el.src
+        }
     </script>
 </body>
 
