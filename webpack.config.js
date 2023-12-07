@@ -12,7 +12,7 @@ module.exports = {
     entry: './src/index.js',
     devServer: {
         static: {
-            directory: path.join(__dirname + '/build')
+            directory: path.join(__dirname + '/dist')
         },
         compress: false,
         port:8080
