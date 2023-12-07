@@ -24,7 +24,7 @@ O projeto está em constante evolução, com melhorias sendo implementadas regul
 Para instalar o Quitanda Virtual, é necessário ter o Node.js configurado em seu ambiente de desenvolvimento.
 
 ## Índice
-- [Instalação](#Instalação)
+- [Instalação](#instalação)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
 - [Documentação](#documentação)
