@@ -203,7 +203,7 @@ Consulte a documentação oficial de cada uma para obter informações detalhada
 
 **core:** Contém scripts de funções principais(globais), que poderão ser usadas em diferentes partes do projeto.
 
-**plugin** Contém scripts de plugins mais específicos.
+**plugin:** Contém scripts de plugins mais específicos.
 
 **pages:**  Contém as páginas específicas do projeto.
 
@@ -225,10 +225,10 @@ Consulte a documentação oficial de cada uma para obter informações detalhada
 
 ### Arquivos JavaScript
 ##### 1.  include.js
-Esta função foi projetada para possibilitar a inclusão dinâmica de conteúdo em elementos específicos da página através do atributo [dt-include]. O código utiliza a biblioteca jQuery para simplificar a manipulação do DOM e na  execução de requisições AJAX. A função "onLoadHtmlSuccess" permite que outras partes do código registrem callbacks que serão chamados após o sucesso do carregamento do HTML.
+Esta função foi projetada para possibilitar a inclusão dinâmica de conteúdo em elementos específicos da página através do atributo **dt-include**. O código utiliza a biblioteca jQuery para simplificar a manipulação do DOM e na  execução de requisições AJAX. A função **onLoadHtmlSuccess** permite que outras partes do código registrem callbacks que serão chamados após o sucesso do carregamento do HTML.
 
 ##### 2.  changeHrefPlugin.js
-Esta função é um plugin jQuery que adiciona a funcionalidade de alterar dinamicamente o valor do atributo **[dt-include]** pelo valor do atributo **href** de determinados links quando o mesmos são clicados. O plugin é acionado após o sucesso do carregamento de HTML, e sua aplicação específica é em elementos com o atributo **[dt-dashboard}** que tem a renderização de seu conteúdo seu conteúdo acontecendo de forma assíncrona.
+Esta função é um plugin jQuery que adiciona a funcionalidade de alterar dinamicamente o valor do atributo **dt-include** pelo valor do atributo **href** de determinados links quando o mesmos são clicados. O plugin é acionado após o sucesso do carregamento de HTML, e sua aplicação específica é em elementos com o atributo **dt-dashboard** que tem a renderização de seu conteúdo seu conteúdo acontecendo de forma assíncrona.
 
 
 ## Uso
