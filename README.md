@@ -192,20 +192,35 @@ Consulte a documentação oficial de cada uma para obter informações detalhada
 ```
 #### Descrição
 **dist:** Contém os arquivos gerados após a construção (build) do projeto.
+
 **node_module:** : Contém as dependências do projeto instaladas pelo npm.
+
 **src:** Contém o código-fonte do projeto.
+
 **imgs:**  Armazena imagens utilizadas no projeto.
+
 **js:** Contém os scripts JavaScript do projeto.
+
 **core:** Contém scripts de funções principais(globais), que poderão ser usadas em diferentes partes do projeto.
+
 **plugin** Contém scripts de plugins mais específicos.
+
 **pages:**  Contém as páginas específicas do projeto.
+
 **scss:** Armazena os arquivos SCSS para estilização.
+
 **bi.svg:** Arquivo SVG referente ao bootstrapIcons.
+
 **index.html:** Página inicial do projeto.
+
 **index.js:** Arquivo JavaScript principal.
+
 **README.md:** Documentação do projeto
+
 **package-lock.json:** Registra as versões exatas das dependências instaladas pelo npm.
+
 **package.json:** Arquivo de configuração do npm.
+
 **webpack.config.js**  Configuração do Webpack para empacotar o projeto
 
 ### Arquivos JavaScript
