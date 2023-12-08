@@ -26,7 +26,7 @@ Para instalar o Quitanda Virtual, é necessário ter o Node.js configurado em se
 ## Índice
 - [Instalação](#instalação)
 - [Dependências](#dependências)
-- [Estrutura](#estrutura)
+- [Estrutura de Diretórios](#estruturadediretórios)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
 - [Créditos](#créditos)
