@@ -50,6 +50,8 @@ Antes de começar, certifique-se de ter o Node.js instalado em seu sistema. Caso
         npm install
 ```
 Isso instalará todas as dependências necessárias, incluindo o Webpack, jQuery e Bootstrap 5.
+
+Se o seu intuíto é desenvolver tendo esse projeto como base, execute o ambiente de desenvolvimento.
 - #### Execute o Ambiente de Desenvolvimento:
 ```bash
         npm start
@@ -58,6 +60,7 @@ Este comando iniciará o ambiente de desenvolvimento usando o Webpack Dev Server
 
 ###### Nota: Caso você tenha especificado uma porta diferente, substitua 8080 pela porta que você configurou.
 
+Se o seu intuíto é executar o produto já desenvolvido, gere a build de produção.
 - #### Gere a Build de Produção:
 ```bash
         npm run build
