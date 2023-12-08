@@ -26,6 +26,7 @@ Para instalar o Quitanda Virtual, é necessário ter o Node.js configurado em se
 ## Índice
 - [Instalação](#instalação)
 - [Dependências](#dependências)
+- [Estrutura](#estrutura)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
 - [Créditos](#créditos)
@@ -161,6 +162,53 @@ Interface de linha de comando do webpack.
 Servidor de desenvolvimento para servir o projeto durante o desenvolvimento.
 
 Consulte a documentação oficial de cada uma para obter informações detalhadas sobre seu uso.
+
+## Estrutura de Diretórios
+```bash
+|-dist 
+|-node_modules
+|-src
+    |-imgs
+    |-js
+        |-core
+            -include.js.
+        |-plugins
+            -changeHrefPlugin.js.
+    |-pages
+    |-scss
+    -bi.svg
+    -index.html.
+    -index.js
+-README.md.
+-package-lock.json
+-package.json
+-webpack.config.js.
+```
+#### Descrição
+**dist:** Contém os arquivos gerados após a construção (build) do projeto.
+**node_module:** : Contém as dependências do projeto instaladas pelo npm.
+**src:** Contém o código-fonte do projeto.
+**imgs:**  Armazena imagens utilizadas no projeto.
+**js:** Contém os scripts JavaScript do projeto.
+**core:** Contém scripts de funções principais(globais), que poderão ser usadas em diferentes partes do projeto.
+**plugin** Contém scripts de plugins mais específicos.
+**pages:**  Contém as páginas específicas do projeto.
+**scss:** Armazena os arquivos SCSS para estilização.
+**bi.svg:** Arquivo SVG referente ao bootstrapIcons.
+**index.html:** Página inicial do projeto.
+**index.js:** Arquivo JavaScript principal.
+**README.md:** Documentação do projeto
+**package-lock.json:** Registra as versões exatas das dependências instaladas pelo npm.
+**package.json:** Arquivo de configuração do npm.
+**webpack.config.js**  Configuração do Webpack para empacotar o projeto
+
+### Arquivos JavaScript
+##### 1.  include.js
+Esta função foi projetada para possibilitar a inclusão dinâmica de conteúdo em elementos específicos da página através do atributo [dt-include]. O código utiliza a biblioteca jQuery para simplificar a manipulação do DOM e na  execução de requisições AJAX. A função "onLoadHtmlSuccess" permite que outras partes do código registrem callbacks que serão chamados após o sucesso do carregamento do HTML.
+
+##### 2.  changeHrefPlugin.js
+Esta função é um plugin jQuery que adiciona a funcionalidade de alterar dinamicamente o valor do atributo **[dt-include]** pelo valor do atributo **href** de determinados links quando o mesmos são clicados. O plugin é acionado após o sucesso do carregamento de HTML, e sua aplicação específica é em elementos com o atributo **[dt-dashboard}** que tem a renderização de seu conteúdo seu conteúdo acontecendo de forma assíncrona.
+
 
 ## Uso
 Aqui estão as instruções sobre como usar o projeto "DaTerra - Quitanda (website)", que utiliza Webpack, jQuery e Bootstrap 5.
