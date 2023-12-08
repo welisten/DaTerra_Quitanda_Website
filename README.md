@@ -240,7 +240,7 @@ Para iniciar o ambiente de desenvolvimento e visualizar o projeto localmente, si
 
 ```bash
 # 1. Navegue até o diretório do projeto
-        cd caminho/para/seu/projeto
+        cd caminho/para/DaTerra_Quitanda_Website
 ```
 ```bash
 # 2. Instale as dependências
@@ -324,9 +324,9 @@ Este projeto não seria possível sem a contribuição valiosa de diversas pesso
 
 ### Contribuidores
 
-- [Victor Hugo Queiroga](https://github.com/victorHQ)
-- [Ricardo Maroquio](https://github.com/maroquio)
-- [Renata Caruzo](https://github.com/renataCaruso)
+- [Victor Hugo Queiroga](https://github.com/victorHQ) - Que muito me ajudou, na resolução de alguns problemas que apareceram no meio do proceso de desenvolvimento.
+- [Ricardo Maroquio](https://github.com/maroquio) - Que prestou seu conhecimento como material didatico para o ensino de programação
+- [Renata Caruzo](https://github.com/renataCaruso) -  Que me ajudou, na resolução de alguns problemas que apareceram no meio do proceso de desenvolvimento.
 - ...
 
 Agradeço a todas as pessoas que enviaram sugestões, relatórios de bugs e ajudaram a melhorar este projeto.
