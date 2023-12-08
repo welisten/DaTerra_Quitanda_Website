@@ -40,6 +40,9 @@ Antes de começar, certifique-se de ter o Node.js instalado em seu sistema. Caso
 
 ```bash
        git clone https://github.com/welisten/DaTerra_Quitanda_Website
+```
+- #### Vá para pasta do Projeto:
+```bash
        cd DaTerra_Quitanda_Website 
 ```
 - #### Instale as Dependências:
